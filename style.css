@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(to bottom right, #ffe4f1, #ffd6ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff0f7;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(255, 182, 193, 0.3);
+  text-align: center;
+  max-width: 380px;
+  width: 100%;
+  border: 2px dashed #ffb6c1;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #ffb6c1;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.4);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #d63384;
+}
+
+.bio {
+  margin: 16px 0;
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.next-btn {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+}
+
+.next-btn:hover {
+  background-color: #e754a1;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.thumb-item {
+  text-align: center;
+}
+
+.thumb-title {
+  font-size: 14px;
+  color: #d63384;
+  margin-bottom: 8px;
+}
+
+.thumb-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #ffb6c1;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.thumb-item img:hover {
+  transform: scale(1.05);
+}
+
+#grid body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(
+    to bottom right,
+    #ffe4f1,
+    #ffd6ec
+  ); /* pink lembut */
+  min-height: 100vh;
+}
+
+.page-header {
+  background-color: #fff0f7; /* blush pink */
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.2);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #d63384;
+}
+
+.gallery-container {
+  background-color: #ffffff;
+  margin: 10px auto;
+  padding: 30px 16px;
+  max-width: 1000px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 182, 193, 0.3);
+  text-align: center;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  margin-bottom: 10px;
+}
+
+.thumb-item {
+  text-align: center;
+}
+
+.thumb-title {
+  font-size: 14px;
+  color: #d63384;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.thumb-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #ffb6c1;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.thumb-item img:hover {
+  transform: scale(1.05);
+}
+
+#fff body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(to bottom right, #ffe4f1, #ffd6ec);
+  min-height: 100vh;
+}
+
+.page-header {
+  background-color: #fff0f7;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.2);
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 22px;
+  color: #d63384;
+}
+
+.gallery-container {
+  background-color: #ffffff;
+  margin: 40px auto;
+  padding: 30px;
+  max-width: 700px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(255, 182, 193, 0.3);
+  text-align: center;
+}
+
+.thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.thumb-item {
+  text-align: center;
+}
+
+.thumb-title {
+  font-size: 14px;
+  color: #d63384;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.thumb-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #ffb6c1;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.thumb-item img:hover {
+  transform: scale(1.05);
+}

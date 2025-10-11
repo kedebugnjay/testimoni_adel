@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimoni</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="page-header">
+        <h1 id="judulTesti">Testimoni</h1>
+      </header>
+      <img src="foto_adel.jpg" alt="Foto Testi" class="profile-img" />
+      <p class="bio">Terima kasih sudah mampir 💕</p>
+      <button class="next-btn" onclick="window.location.href='testi2.html'">
+        Lanjut ➡️
+      </button>
+
+      <div class="ad-slot"></div>
+    </main>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const judul = urlParams.get("judul") || "Testimoni";
+
+      document.getElementById("judulTesti").textContent = judul;
+    </script>
+  </body>
+</html>

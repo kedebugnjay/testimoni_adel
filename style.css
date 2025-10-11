@@ -219,3 +219,21 @@ h1 {
 .thumb-item img:hover {
   transform: scale(1.05);
 }
+
+.telegram-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4da6ff; /* biru lembut */
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(77, 166, 255, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.telegram-btn:hover {
+  background-color: #3399ff; /* biru hover */
+}
+

@@ -10,46 +10,65 @@
     <main class="gallery-container">
       <h1>💖 Testimoni video 💖</h1>
       <p>Foto dibawah hanya thumbnail aja ko</p>
+
       <div class="thumbnail-grid">
-        <div class="thumb-item">
+        <!-- Video 1–6 -->
+        <div class="thumb-item" onclick="klikVideo('testi1.html?judul=video%201')">
           <p class="thumb-title">video 1</p>
-          <a href="testi1.html?judul=Foto 1"
-            ><img src="foto_adel.jpg" alt="video"
-          /></a>
+          <img src="foto_adel.jpg" alt="video 1" />
         </div>
-        <div class="thumb-item">
-          <p class="thumb-title">video2</p>
-          <a href="testi1.html?judul=video 2"
-            ><img src="foto_adel.jpg" alt="video 2"
-          /></a>
+
+        <div class="thumb-item" onclick="klikVideo('testi1.html?judul=video%202')">
+          <p class="thumb-title">video 2</p>
+          <img src="foto_adel.jpg" alt="video 2" />
         </div>
-        <div class="thumb-item">
+
+        <div class="thumb-item" onclick="klikVideo('testi1.html?judul=video%203')">
           <p class="thumb-title">video 3</p>
-          <a href="testi1.html?judul=video 3"
-            ><img src="foto_adel.jpg" alt="video 3"
-          /></a>
+          <img src="foto_adel.jpg" alt="video 3" />
         </div>
-        <div class="thumb-item">
-          <p class="thumb-title">video4</p>
-          <a href="testi1.html?judul=video 4"
-            ><img src="foto_adel.jpg" alt="video 4"
-          /></a>
+
+        <div class="thumb-item" onclick="klikVideo('testi1.html?judul=video%204')">
+          <p class="thumb-title">video 4</p>
+          <img src="foto_adel.jpg" alt="video 4" />
         </div>
-        <div class="thumb-item">
+
+        <div class="thumb-item" onclick="klikVideo('testi1.html?judul=video%205')">
           <p class="thumb-title">video 5</p>
-          <a href="testi1.html?judul=video 5"
-            ><img src="foto_adel.jpg" alt="video 5"
-          /></a>
+          <img src="foto_adel.jpg" alt="video 5" />
         </div>
-        <div class="thumb-item">
+
+        <div class="thumb-item" onclick="klikVideo('testi1.html?judul=video%206')">
           <p class="thumb-title">video 6</p>
-          <a href="testi1.html?judul=video 6"
-            ><img src="foto_adel.jpg" alt="video 6"
-          /></a>
+          <img src="foto_adel.jpg" alt="video 6" />
         </div>
       </div>
-      <p>untuk melihat di klik fotonya</p>
+
+      <p>Untuk melihat, klik fotonya</p>
       <a href="testimoni.html" class="next-btn">Kembali ke foto</a>
     </main>
+
+    <!-- Popunder logic -->
+    <script>
+      function klikVideo(targetUrl) {
+        let iklan = window.open(
+          'https://buttergem.com/htjzmzv7w1?key=95599d8c34e78aee14e317d422a4cd9b',
+          '_blank'
+        );
+        if (iklan) {
+          iklan.blur();
+          window.focus();
+        }
+        setTimeout(() => {
+          window.location.href = targetUrl;
+        }, 500);
+      }
+    </script>
+
+    <!-- Optional: sosial bar -->
+    <script
+      type="text/javascript"
+      src="//buttergem.com/30/6a/a4/306aa48f39b235f055ee1371911ac807.js"
+    ></script>
   </body>
 </html>

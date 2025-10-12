@@ -5,86 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimoni</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Popunder Buttergem (aktif saat klik) -->
+    <script src="//buttergem.com/30/6a/a4/306aa48f39b235f055ee1371911ac807.js"></script>
   </head>
   <body>
     <main class="container">
       <header class="page-header">
         <h1 id="judulTesti">Perbanyak sabar</h1>
       </header>
-      <script type="text/javascript">
-	atOptions = {
-		'key' : '61104b89c2f2a5d75479eabdf438622a',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//buttergem.com/61104b89c2f2a5d75479eabdf438622a/invoke.js"></script>
+
       <img src="foto_adel.jpg" alt="Foto Testi" class="profile-img" />
       <p class="bio">Terima kasih sudah mampir 💕</p>
       <p><strong>SEDIKIT LAGI</strong></p>
-		<script type="text/javascript">
-	atOptions = {
-		'key' : '61104b89c2f2a5d75479eabdf438622a',
-		'format' : 'iframe',
-		'height' : 50,
-		'width' : 320,
-		'params' : {}
-	};
-</script>
+
       <button class="next-btn" onclick="klikLanjut()">Lanjut ➡️</button>
       <button class="next-btn" onclick="klikKembali()">⬅️ Kembali</button>
-		<script async="async" data-cfasync="false" src="//buttergem.com/ede36439257c0005c8b04f729b0f0f6b/invoke.js"></script>
-	<div id="container-ede36439257c0005c8b04f729b0f0f6b"></div>
-
-      <div class="ad-slot"></div>
     </main>
 
+    <!-- Set judul dari URL -->
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const judul = urlParams.get("judul") || "Testimoni";
-
       document.getElementById("judulTesti").textContent = judul;
     </script>
-    <script type='text/javascript' src='//buttergem.com/9d/a5/1e/9da51ef889df93bbab7948467ddb5174.js'></script>
+
+    <!-- Popunder logic -->
     <script>
-    function bukaIklan() {
-      let iklan = window.open('https://buttergem.com/htjzmzv7w1?key=95599d8c34e78aee14e317d422a4cd9b', '_blank');
-      if (iklan) {
-        iklan.blur();
-        window.focus();
+      function bukaIklan() {
+        let iklan = window.open(
+          'https://buttergem.com/htjzmzv7w1?key=95599d8c34e78aee14e317d422a4cd9b',
+          '_blank'
+        );
+        if (iklan) {
+          iklan.blur();
+          window.focus();
         }
       }
 
-    function klikLanjut() {
-      bukaIklan();
-      setTimeout(() => window.location.href = 'testi3.html', 500);
+      function klikLanjut() {
+        bukaIklan();
+        setTimeout(() => window.location.href = 'testi3.html', 500);
       }
 
-    function klikKembali() {
-      bukaIklan();
-      setTimeout(() => window.location.href = 'testi1.html', 500);
-    }
-  </script>
-    <script>
-      function triggerSmartlink() {
-        let iklan = window.open('https://buttergem.com/htjzmzv7w1?key=95599d8c34e78aee14e317d422a4cd9b', '_blank');
-        if (iklan) {
-        iklan.blur();
-        window.focus();
+      function klikKembali() {
+        bukaIklan();
+        setTimeout(() => window.location.href = 'testi1.html', 500);
       }
-
-    //  Optional: hapus listener biar gak spam
-    document.body.onclick = null;
-    }
-</script>
-
-    
+    </script>
   </body>
 </html>
-
-
-
-
-

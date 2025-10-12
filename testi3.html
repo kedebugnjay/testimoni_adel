@@ -5,31 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sabar</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Popunder Buttergem (aktif saat klik) -->
+    <script src="//buttergem.com/30/6a/a4/306aa48f39b235f055ee1371911ac807.js"></script>
   </head>
   <body>
     <main class="container">
       <header class="page-header">
         <h1 id="judulTesti">Perbanyak sabar</h1>
       </header>
+
       <img src="foto_adel.jpg" alt="Sabar" class="profile-img" />
       <p class="bio">Terima kasih sudah mampir 💕</p>
       <p><strong>1 KALI LAGI</strong></p>
-      <button class="next-btn" onclick="window.location.href='testi2.html'">
-        Lanjut 
-      </button>
-      <button class="next-btn" onclick="window.location.href='testi1.html'">
-        Kembali
-      </button>
 
-      <div class="ad-slot"></div>
+      <button class="next-btn" onclick="klikLanjut()">Lanjut ➡️</button>
+      <button class="next-btn" onclick="klikKembali()">⬅️ Kembali</button>
     </main>
 
+    <!-- Set judul dari URL -->
     <script>
       const urlParams = new URLSearchParams(window.location.search);
       const judul = urlParams.get("judul") || "Sabar";
-
       document.getElementById("judulTesti").textContent = judul;
+    </script>
+
+    <!-- Popunder logic -->
+    <script>
+      function bukaIklan() {
+        let iklan = window.open(
+          'https://buttergem.com/htjzmzv7w1?key=95599d8c34e78aee14e317d422a4cd9b',
+          '_blank'
+        );
+        if (iklan) {
+          iklan.blur();
+          window.focus();
+        }
+      }
+
+      function klikLanjut() {
+        bukaIklan();
+        setTimeout(() => window.location.href = 'testi2.html', 500);
+      }
+
+      function klikKembali() {
+        bukaIklan();
+        setTimeout(() => window.location.href = 'testi1.html', 500);
+      }
     </script>
   </body>
 </html>
-
